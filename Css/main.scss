@@ -63,7 +63,7 @@ header{
 			.navbar__logo-title{
 				display: inline-block;
 				font-family: $FontsGeo;
-				font-size: 1.9em;
+				font-size: 2em;
 				color: rgb(241, 205, 179);
 				width: 100%;
 				line-height: 1;
@@ -71,10 +71,11 @@ header{
 		
 			.navbar__logo-subtitle{
 				display: inline-block;
-				font-size: 13px;
+				font-size: .9em;
+				word-spacing: 1px;
 				font-family: "Arial";
 				color: #fff;
-				line-height: 2;
+				line-height: 1.6;
 			}
 		}
 
