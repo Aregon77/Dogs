@@ -79,14 +79,18 @@ header{
 		}
 
 		.nav-item{
+			
 			 .nav-link{
 				margin-right:26px ;
 				font-size: 15px;
 				font-family: "Arial";
-				color: rgb(205, 205, 205);
+				
+				color: rgba(205, 205, 205,.8);
 				padding:0;
 				padding-bottom: 5px;
+				
 				position: relative;
+				
 					&:before{
 						content: "";
 						display: inline-block;
@@ -98,9 +102,11 @@ header{
 						top: 25px;
 						left: 0;
 						opacity: 0;
+						transition: all 0.5s linear;
 					} 
 					&:hover{
 						text-decoration: none;
+						opacity: 1;
 					}
 					&:hover:before{
 						opacity: 1;

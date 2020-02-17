@@ -78,7 +78,7 @@ header .navbar .nav-item .nav-link {
   margin-right: 26px;
   font-size: 15px;
   font-family: "Arial";
-  color: #cdcdcd;
+  color: rgba(205, 205, 205, 0.8);
   padding: 0;
   padding-bottom: 5px;
   position: relative;
@@ -95,10 +95,13 @@ header .navbar .nav-item .nav-link:before {
   top: 25px;
   left: 0;
   opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 header .navbar .nav-item .nav-link:hover {
   text-decoration: none;
+  opacity: 1;
 }
 
 header .navbar .nav-item .nav-link:hover:before {
