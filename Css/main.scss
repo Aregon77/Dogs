@@ -25,10 +25,10 @@ $FontsGeo:'Georgia';
 ****************
 ****************/
 @mixin back-img ($back) {
-    background-image: url($back);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	background-image: url($back);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 
@@ -37,14 +37,14 @@ html {
 	font-size: 10px;
 }
 
-body{
+body {
 	font-size: 16px;
 	box-sizing: border-box;
 }
 
 .container {
 	width: 100%;
-    max-width: 1170px;
+	max-width: 1170px;
 }
 
 /***************
@@ -52,68 +52,72 @@ body{
 HEDER
 ****************
 ****************/
-header{
+header {
 	@include back-img ("../img/header/Header-Back.jpg");
-	.navbar{
+
+	.navbar {
 		padding-top: 60px;
-		.navbar-brand{
-			&:hover{
+
+		.navbar-brand {
+			&:hover {
 				text-decoration: none;
 			}
-			.navbar__logo-title{
+
+			.navbar__logo-title {
 				display: inline-block;
 				font-family: $FontsGeo;
 				font-size: 1.9em;
 				color: rgb(241, 205, 179);
 				width: 100%;
 				line-height: 1;
-				}
-		
-			.navbar__logo-subtitle{
+			}
+
+			.navbar__logo-subtitle {
 				display: inline-block;
-				font-size: 13px;
+				font-size: .9em;
+				word-spacing: 1px;
 				font-family: "Arial";
 				color: #fff;
-				line-height: 2;
+				line-height: 1.8;
 			}
 		}
 
-		.nav-item{
-			
-			 .nav-link{
-				margin-right:35px ;
+		.nav-item {
+
+			.nav-link {
+				margin-right: 35px;
 				font-size: 15px;
 				font-family: "Arial";
-				
-				color: rgba(205, 205, 205,.8);
-				padding:0;
+
+				color: rgba(205, 205, 205, .8);
+				padding: 0;
 				padding-bottom: 5px;
-				
+
 				position: relative;
-				
-					&:before{
-						content: "";
-						display: inline-block;
-						width: 100%;
-						height: 4px;
-						border-radius: 2px;
-						background-color:#f1cdb3;
-						position: absolute;
-						top: 25px;
-						left: 0;
-						opacity: 0;
-						transition: all 0.5s linear;
-					} 
-					&:hover{
-						text-decoration: none;
-						opacity: 1;
-					}
-					&:hover:before{
-						opacity: 1;
-					}
-			 }
+
+				&:before {
+					content: "";
+					display: inline-block;
+					width: 100%;
+					height: 4px;
+					border-radius: 2px;
+					background-color: #f1cdb3;
+					position: absolute;
+					top: 25px;
+					left: 0;
+					opacity: 0;
+					transition: all 0.5s linear;
+				}
+
+				&:hover {
+					text-decoration: none;
+					opacity: 1;
+				}
+
+				&:hover:before {
+					opacity: 1;
+				}
+			}
 		}
 	}
 }
-
-
