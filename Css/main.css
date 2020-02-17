@@ -68,10 +68,11 @@ header .navbar .navbar-brand .navbar__logo-title {
 
 header .navbar .navbar-brand .navbar__logo-subtitle {
   display: inline-block;
-  font-size: 13px;
+  font-size: .9em;
+  word-spacing: 1px;
   font-family: "Arial";
   color: #fff;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 header .navbar .nav-item .nav-link {
