@@ -1,0 +1,113 @@
+/***************
+****************
+FONTS
+****************
+****************/
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/9605.eot');
+	src: local('☺'), url('../fonts/9605.woff') format('woff'), url('../fonts/9605.ttf') format('truetype'), url('../fonts/9605.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/***************
+****************
+$$$
+****************
+****************/
+
+$FontsGeo:'Georgia';
+
+/***************
+****************
+@@@
+****************
+****************/
+@mixin back-img ($back) {
+    background-image: url($back);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+html {
+	font-size: 10px;
+}
+
+body{
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+    max-width: 1170px;
+}
+
+/***************
+****************
+HEDER
+****************
+****************/
+header{
+	@include back-img ("../img/header/Header-Back.jpg");
+	.navbar{
+		padding-top: 60px;
+		.navbar-brand{
+			&:hover{
+				text-decoration: none;
+			}
+			.navbar__logo-title{
+				display: inline-block;
+				font-family: $FontsGeo;
+				font-size: 1.9em;
+				color: rgb(241, 205, 179);
+				width: 100%;
+				line-height: 1;
+				}
+		
+			.navbar__logo-subtitle{
+				display: inline-block;
+				font-size: 13px;
+				font-family: "Arial";
+				color: #fff;
+				line-height: 2;
+			}
+		}
+
+		.nav-item{
+			 .nav-link{
+				margin-right:26px ;
+				font-size: 15px;
+				font-family: "Arial";
+				color: rgb(205, 205, 205);
+				padding:0;
+				padding-bottom: 5px;
+				position: relative;
+					&:before{
+						content: "";
+						display: inline-block;
+						width: 100%;
+						height: 4px;
+						border-radius: 2px;
+						background-color:#f1cdb3;
+						position: absolute;
+						top: 25px;
+						left: 0;
+						opacity: 0;
+					} 
+					&:hover{
+						text-decoration: none;
+					}
+					&:hover:before{
+						opacity: 1;
+					}
+			 }
+		}
+	}
+}
+
+
