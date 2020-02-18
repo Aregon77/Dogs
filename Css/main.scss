@@ -18,6 +18,8 @@ $$$
 ****************/
 
 $FontsGeo:'Georgia';
+$btn-back-color:rgb(241, 205, 179);
+$btn-text-color:rgb(41, 41, 41);
 
 /***************
 ****************
@@ -31,8 +33,27 @@ $FontsGeo:'Georgia';
 	background-position: center;
 }
 
+/***************
+****************
+Btn
+****************
+****************/
+
+.btn{
+	font-size: 1.1em;
+	font-family: $FontsGeo;
+	color: $btn-text-color;
+	background-color: $btn-back-color;
+	padding: 12px 48px;
+	border-radius:30px;
+}
 
 
+/***************
+****************
+Html
+****************
+****************/
 html {
 	font-size: 10px;
 }
@@ -54,15 +75,13 @@ HEDER
 ****************/
 header {
 	@include back-img ("../img/header/Header-Back.jpg");
-
+	
 	.navbar {
 		padding-top: 60px;
-
 		.navbar-brand {
 			&:hover {
 				text-decoration: none;
 			}
-
 			.navbar__logo-title {
 				display: inline-block;
 				font-family: $FontsGeo;
@@ -71,7 +90,6 @@ header {
 				width: 100%;
 				line-height: 1;
 			}
-
 			.navbar__logo-subtitle {
 				display: inline-block;
 				font-size: .9em;
@@ -81,9 +99,7 @@ header {
 				line-height: 1.8;
 			}
 		}
-
 		.nav-item {
-
 			.nav-link {
 				margin-right: 35px;
 				font-size: 15px;
@@ -108,18 +124,32 @@ header {
 					
 					transition: all 0.5s ease-in-out;
 				}
-				
-
 				&:hover {
 					text-decoration: none;
 					opacity: 1;
 				}
-
 				&:hover:before, 
 				&:focus:before {
 					width: 100%;
 				}
 			}
+		}
+	}
+	.header__main{
+		padding-top: 220px;
+		padding-bottom: 220px;
+		
+		h1{
+			font-family: $FontsGeo;
+			font-size: 44px;
+			color: rgb(255, 255, 255); 
+			max-width: 350px;
+		}
+		p{	
+			font-size: 15px;
+			font-family: "Arial";
+			color: rgb(205, 205, 205);
+			line-height: 1.6;
 		}
 	}
 }
