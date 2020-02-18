@@ -31,9 +31,19 @@ Btn
   font-size: 1.1em;
   font-family: "Georgia";
   color: #292929;
-  background-color: #f1cdb3;
-  padding: 12px 48px;
+  padding: 11px 47px;
   border-radius: 30px;
+  border: 3px solid #f1cdb3;
+  -webkit-transition: all .7s linear;
+  transition: all .7s linear;
+}
+
+.btn-gold {
+  background-color: #f1cdb3;
+}
+
+.btn-gold:hover {
+  background-color: #fff;
 }
 
 /***************
@@ -66,6 +76,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 925px;
 }
 
 header .navbar {
@@ -129,7 +140,7 @@ header .navbar .nav-item .nav-link:hover:before, header .navbar .nav-item .nav-l
 
 header .header__main {
   padding-top: 220px;
-  padding-bottom: 220px;
+  padding-bottom: 268px;
 }
 
 header .header__main h1 {
@@ -137,12 +148,34 @@ header .header__main h1 {
   font-size: 44px;
   color: white;
   max-width: 350px;
+  padding-bottom: 30px;
 }
 
 header .header__main p {
   font-size: 15px;
   font-family: "Arial";
   color: #cdcdcd;
+  line-height: 1.6;
+  padding-bottom: 30px;
+}
+
+.main .main__about {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.main .main__about h1 {
+  font-size: 35px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 1.286;
+  width: 315px;
+}
+
+.main .main__about p {
+  font-size: 15px;
+  font-family: "Arial";
+  color: #4c4c4c;
   line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */

@@ -43,10 +43,21 @@ Btn
 	font-size: 1.1em;
 	font-family: $FontsGeo;
 	color: $btn-text-color;
-	background-color: $btn-back-color;
-	padding: 12px 48px;
+	
+	padding: 11px 47px;
 	border-radius:30px;
+	border: 3px solid $btn-back-color ;
+	transition: all .7s linear;
 }
+
+.btn-gold{
+	background-color: $btn-back-color;
+	&:hover{
+		background-color: #fff;
+		
+	}
+}
+
 
 
 /***************
@@ -75,7 +86,7 @@ HEDER
 ****************/
 header {
 	@include back-img ("../img/header/Header-Back.jpg");
-	
+	height: 925px;
 	.navbar {
 		padding-top: 60px;
 		.navbar-brand {
@@ -137,19 +148,42 @@ header {
 	}
 	.header__main{
 		padding-top: 220px;
-		padding-bottom: 220px;
+    	padding-bottom: 268px;
 		
 		h1{
 			font-family: $FontsGeo;
 			font-size: 44px;
 			color: rgb(255, 255, 255); 
 			max-width: 350px;
+			padding-bottom: 30px;
 		}
 		p{	
 			font-size: 15px;
 			font-family: "Arial";
 			color: rgb(205, 205, 205);
 			line-height: 1.6;
+			padding-bottom: 30px;
 		}
 	}
+}
+
+.main{
+	.main__about {
+		padding-top: 80px;
+		padding-bottom: 160px;
+		h1{
+			font-size: 35px;
+			font-family: $FontsGeo;
+			color: rgb(84, 84, 84);
+			line-height: 1.286;
+			width: 315px;
+		}
+		p{
+			font-size: 15px;
+			font-family: "Arial";
+			color: rgb(76, 76, 76);
+			line-height: 1.6;
+		}
+	}
+	
 }
