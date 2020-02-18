@@ -28,22 +28,35 @@ Btn
 ****************
 ****************/
 .btn {
-  font-size: 1.1em;
   font-family: "Georgia";
   color: #292929;
-  padding: 11px 47px;
   border-radius: 30px;
-  border: 4px solid #f1cdb3;
+  border: 3px solid #f1cdb3;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
 
 .btn-gold {
+  font-size: 1.1em;
   background-color: #f1cdb3;
+  width: 205px;
+  padding: 12px 0;
 }
 
 .btn-gold:hover {
   background-color: #fff;
+}
+
+.btn-white {
+  width: 185px;
+  padding: 11px 0;
+  font-size: 17px;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.btn-white:hover {
+  background: #f1cdb3;
 }
 
 /***************
@@ -76,7 +89,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 925px;
+  height: 100vh;
 }
 
 header .navbar {
@@ -164,6 +177,11 @@ header .header__main p {
   padding-bottom: 160px;
 }
 
+.main .main__about .main__about_content {
+  margin-left: 80px;
+  width: 425px;
+}
+
 .main .main__about h1 {
   font-size: 35px;
   font-family: "Georgia";
@@ -177,5 +195,75 @@ header .header__main p {
   font-family: "Arial";
   color: #4c4c4c;
   line-height: 1.6;
+}
+
+.main .main__section {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 40px;
+}
+
+.main .main__section .title {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
+.main .main__section .title .title__h1 {
+  font-size: 35px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 1.286;
+}
+
+.main .main__section .animals__card {
+  border-radius: 9px;
+  background-color: #fafafa;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.main .main__section .animals__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+}
+
+.main .main__section .animals__card img {
+  max-height: 207px;
+  margin: 35px auto 40px;
+}
+
+.main .main__section .animals__card h4 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 2.25;
+}
+
+.main .main__section .animals__card .btn {
+  margin-bottom: 30px;
+}
+
+.main .main__section .slick-prev {
+  left: -55px;
+}
+
+.main .main__section .slick-prev:before {
+  content: url(../img/Main_slider/Arrow/long-left-arrow.png);
+  font-size: 54px;
+}
+
+.main .main__section .slick-next:before {
+  content: url(../img/Main_slider/Arrow/long-right-arrow.png);
+  font-size: 54px;
+}
+
+.main .main__section .slick-prev:hover, .main .main__section .slick-next:hover {
+  background-color: #f1cdb3;
 }
 /*# sourceMappingURL=main.css.map */

@@ -40,25 +40,33 @@ Btn
 ****************/
 
 .btn{
-	font-size: 1.1em;
 	font-family: $FontsGeo;
 	color: $btn-text-color;
-	
-	padding: 11px 47px;
 	border-radius:30px;
-	border: 4px solid $btn-back-color ;
+	border: 3px solid $btn-back-color ;
 	transition: all .5s linear;
 }
 
 .btn-gold{
+	font-size: 1.1em;
 	background-color: $btn-back-color;
+	width: 205px;
+	padding:12px 0 ;
+	
 	&:hover{
 		background-color: #fff;
 	}
 }
 
-
-
+.btn-white{
+	width: 185px;
+	padding:11px 0 ;
+	font-size: 17px; 
+	transition: all .5s linear;
+	&:hover{
+		background:$btn-back-color;
+	}
+}
 /***************
 ****************
 Html
@@ -85,7 +93,7 @@ HEDER
 ****************/
 header {
 	@include back-img ("../img/header/Header-Back.jpg");
-	height: 925px;
+	height: 100vh;
 	.navbar {
 		padding-top: 60px;
 		.navbar-brand {
@@ -170,6 +178,10 @@ header {
 	.main__about {
 		padding-top: 80px;
 		padding-bottom: 160px;
+		.main__about_content{
+			margin-left: 80px;
+   			width: 425px;
+		}
 		h1{
 			font-size: 35px;
 			font-family: $FontsGeo;
@@ -184,5 +196,65 @@ header {
 			line-height: 1.6;
 		}
 	}
-	
+	.main__section{
+		text-align: center;
+		background-color:#f6f6f6;
+		padding-bottom: 40px;
+		.title{
+			padding-top: 65px;
+			padding-bottom:60px;
+			.title__h1{
+				font-size: 35px;
+				font-family: $FontsGeo;
+				color: rgb(84, 84, 84);
+				line-height: 1.286;
+			}
+		}
+		.animals__card{
+			border-radius: 9px;
+			background-color: rgb(250, 250, 250);
+			text-align: center;
+			
+			margin-left: 25px;
+			margin-right: 25px;
+			transition: all .5s linear;
+			&:hover{
+				transform: scale(1.1);
+				box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+			}
+				img{
+					max-height: 207px;
+					margin:35px auto 40px;
+				}
+				h4{
+					margin-bottom: 24px;
+					
+					font-size: 20px;
+					font-family: "Georgia";
+					color: rgb(84, 84, 84);
+					line-height: 2.25;
+				}
+			.btn{
+				margin-bottom: 30px;
+				}
+		}
+		.slick-prev{
+			left: -55px;
+			&:before{
+				content:url(../img/Main_slider/Arrow/long-left-arrow.png);
+				font-size: 54px;
+			}
+		}
+		.slick-next{
+			&:before{
+				content:url(../img/Main_slider/Arrow/long-right-arrow.png);
+				font-size: 54px;
+			}
+		}
+		.slick-prev,.slick-next{
+			&:hover{
+				background-color:$btn-back-color;
+			}
+		}
+	}	
 }
