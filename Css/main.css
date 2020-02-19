@@ -180,6 +180,18 @@ header .header__main p {
   padding-bottom: 30px;
 }
 
+.main .title {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
+.main .title .title__h1 {
+  font-size: 35px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 1.286;
+}
+
 .main .main__about {
   padding-top: 80px;
   padding-bottom: 160px;
@@ -206,21 +218,8 @@ header .header__main p {
 }
 
 .main .main__section {
-  text-align: center;
   background-color: #f6f6f6;
   padding-bottom: 40px;
-}
-
-.main .main__section .title {
-  padding-top: 65px;
-  padding-bottom: 60px;
-}
-
-.main .main__section .title .title__h1 {
-  font-size: 35px;
-  font-family: "Georgia";
-  color: #545454;
-  line-height: 1.286;
 }
 
 .main .main__section .animals__card {
@@ -276,5 +275,22 @@ header .header__main p {
 .main .main__section .slick-next:before {
   content: url(../img/Main_slider/Arrow/long-right-arrow.png);
   font-size: 54px;
+}
+
+.main .main__help .main__help-items {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 75px;
+}
+
+.main .main__help .main__help-items img {
+  margin-bottom: 25px;
+}
+
+.main .main__help .main__help-items p {
+  font-size: 20px;
+  font-family: "Georgia";
+  color: #545454;
+  line-height: 2.25;
 }
 /*# sourceMappingURL=main.css.map */
