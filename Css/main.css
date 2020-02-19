@@ -98,6 +98,10 @@ body {
   max-width: 1170px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /***************
 ****************
 HEDER
@@ -113,10 +117,6 @@ header {
 
 header .navbar {
   padding-top: 60px;
-}
-
-header .navbar .navbar-brand:hover {
-  text-decoration: none;
 }
 
 header .navbar .navbar-brand .navbar__logo-title {
@@ -162,7 +162,6 @@ header .navbar .nav-item .nav-link:before {
 }
 
 header .navbar .nav-item .nav-link:hover {
-  text-decoration: none;
   opacity: 1;
 }
 
@@ -325,5 +324,38 @@ header .header__main p {
   color: #b2b2b2;
   font-style: italic;
   line-height: 1.5;
+}
+
+.footer {
+  background-image: url("../img/Footer__icon/Footer-Back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+}
+
+.footer h1 {
+  font-size: 35px;
+  font-family: "Georgia";
+  color: white;
+  line-height: 1.286;
+  margin-bottom: 20px;
+  text-align: left;
+  word-spacing: 5px;
+}
+
+.footer .footer__item {
+  margin-bottom: 35px;
+}
+
+.footer .footer__item a {
+  font-size: 20px;
+  font-family: "Times New Roman";
+  color: #f1cdb3;
+  text-align: right;
+}
+
+.footer .footer__item a img {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=main.css.map */

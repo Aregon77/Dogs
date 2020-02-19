@@ -19,6 +19,7 @@ $$$
 
 $FontsGeo:'Georgia';
 $FontsArial:'Arial';
+$FontsTimes:"Times New Roman";
 $btn-back-color:rgb(241, 205, 179);
 $btn-text-color:rgb(41, 41, 41);
 
@@ -103,7 +104,11 @@ body {
 	width: 100%;
 	max-width: 1170px;
 }
-
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
 /***************
 ****************
 HEDER
@@ -115,9 +120,6 @@ header {
 	.navbar {
 		padding-top: 60px;
 		.navbar-brand {
-			&:hover {
-				text-decoration: none;
-			}
 			.navbar__logo-title {
 				display: inline-block;
 				font-family: $FontsGeo;
@@ -161,7 +163,6 @@ header {
 					transition: all 0.5s ease-in-out;
 				}
 				&:hover {
-					text-decoration: none;
 					opacity: 1;
 				}
 				&:hover:before, 
@@ -314,4 +315,32 @@ header {
 			}
 		}
 	}
+}
+
+.footer{
+	@include back-img ("../img/Footer__icon/Footer-Back.jpg");
+	padding-top: 80px;
+	h1{
+		font-size: 35px;
+		font-family: $FontsGeo;
+		color: rgb(255, 255, 255);
+		line-height: 1.286;
+		margin-bottom: 20px;
+		text-align: left;
+		word-spacing: 5px;
+	}
+	.footer__item{
+		margin-bottom: 35px;
+		a{
+			font-size: 20px;
+			font-family: $FontsTimes;
+			color: $btn-back-color;
+			text-align: right;
+			
+			img{
+				margin-right: 15px;
+			}
+		}
+	}
+	
 }
