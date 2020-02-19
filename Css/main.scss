@@ -260,20 +260,30 @@ header {
 			margin-bottom: 40px;
 		}
 		.slick-prev{
+			background:url(../img/Main_slider/Arrow/long-left-arrow.png);
 			left: -55px;
-			&:before{
-				content:url(../img/Main_slider/Arrow/long-left-arrow.png);
-				font-size: 54px;
+			width: 50px;
+			height: 50px;
+			&::before{
+				content:"";
+			}
+			&:hover{
+				border-radius:50%;
+				background-color:$btn-back-color;
 			}
 		}
 		.slick-next{
-			&:before{
-				content:url(../img/Main_slider/Arrow/long-right-arrow.png);
-				font-size: 54px;
+			background:url(../img/Main_slider/Arrow/long-right-arrow.png);
+			right: -55px;
+			width: 50px;
+			height: 50px;
+			&::before{
+				content:"";
 			}
-		}
-		.slick-prev,.slick-next{
-		
+			&:hover{
+				border-radius:50%;
+				background-color:$btn-back-color;
+			}
 		}
 	}
 	.main__help{
