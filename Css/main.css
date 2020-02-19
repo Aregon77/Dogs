@@ -171,7 +171,6 @@ header .navbar .nav-item .nav-link:hover:before, header .navbar .nav-item .nav-l
 
 header .header__main {
   padding-top: 220px;
-  padding-bottom: 268px;
 }
 
 header .header__main h1 {
@@ -236,11 +235,15 @@ header .header__main p {
   transition: all .5s linear;
 }
 
-.main .main__section .animals__card:hover, .main .main__section .animals__card:focus {
+.main .main__section .animals__card:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
           box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+}
+
+.main .main__section .animals__card:focus {
+  outline: none;
 }
 
 .main .main__section .animals__card img {
@@ -307,13 +310,13 @@ header .header__main p {
 
 .main .main__help .main__help-items img {
   margin-bottom: 25px;
+  height: 58px;
 }
 
 .main .main__help .main__help-items p {
   font-size: 20px;
   font-family: "Georgia";
   color: #545454;
-  line-height: 2.25;
 }
 
 .main .main__donation {
@@ -330,10 +333,14 @@ header .header__main p {
 
 .main .main__donation .main__donation_content .btn-donation {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main .main__donation .main__donation_content .btn-donation img {
   margin-right: 15px;
+  margin-left: 23px;
 }
 
 .main .main__donation .main__donation_content .donation {
@@ -375,5 +382,71 @@ header .header__main p {
 
 .footer .footer__item a img {
   margin-right: 15px;
+}
+
+/***************
+****************
+Media
+****************
+****************/
+@media screen and (max-width: 1025px) {
+  header {
+    height: 80vh;
+    background-position: center left 57%;
+  }
+  header .navbar .nav-item .nav-link:before {
+    content: none;
+  }
+  .footer {
+    background-position: center left 55%;
+  }
+  .slick-next,
+  .slick-arrow {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  header {
+    height: 100vh;
+    background-position: center left 66%;
+  }
+  header .header__main {
+    padding-top: 260px;
+    padding-bottom: 160px;
+  }
+  header .header__main h1 {
+    margin: auto;
+  }
+  header .navbar .nav-item .nav-link {
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .footer {
+    background-position: center left 0;
+  }
+  .footer .footer__card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .navbar {
+    padding-top: 25px;
+  }
+  header .header__main {
+    padding-top: 210px;
+  }
+  .main .main__about {
+    padding-bottom: 80px;
+  }
+  .main .main__help .main__help-items {
+    margin-bottom: 20px;
+  }
+  .main .main__donation .main__donation_content {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
