@@ -18,6 +18,7 @@ $$$
 ****************/
 
 $FontsGeo:'Georgia';
+$FontsArial:'Arial';
 $btn-back-color:rgb(241, 205, 179);
 $btn-text-color:rgb(41, 41, 41);
 
@@ -50,9 +51,6 @@ Btn
 .btn-gold{
 	font-size: 1.1em;
 	background-color: $btn-back-color;
-	width: 205px;
-	padding:12px 0 ;
-	
 	&:hover{
 		background-color: #fff;
 	}
@@ -66,6 +64,11 @@ Btn
 	}
 }
 
+.btn-header{
+	width: 205px;
+	padding:12px 0 ;
+}
+
 .btn-slider{
 	width: 185px;
 	padding:11px 0 ;
@@ -74,6 +77,13 @@ Btn
 
 .btn-gold-wwide{
 	width: 260px;
+	padding: 9px 0 ;
+}
+.btn-donation{
+		width: 320px;
+		height: 50px;
+		border-radius:9px;
+		padding: 10px;
 }
 /***************
 ****************
@@ -196,16 +206,11 @@ header {
 	.main__about {
 		padding-top: 80px;
 		padding-bottom: 160px;
-		.main__about_content{
-			margin-left: 80px;
-   			width: 425px;
-		}
 		h1{
 			font-size: 35px;
 			font-family: $FontsGeo;
 			color: rgb(84, 84, 84);
 			line-height: 1.286;
-			width: 315px;
 		}
 		p{
 			font-size: 15px;
@@ -240,7 +245,7 @@ header {
 					margin-bottom: 24px;
 					
 					font-size: 20px;
-					font-family: "Georgia";
+					font-family: $FontsGeo;
 					color: rgb(84, 84, 84);
 					line-height: 2.25;
 				}
@@ -286,4 +291,27 @@ header {
 			}
 		}
 	}	
+
+	.main__donation{
+		background-color:#f6f6f6;
+		.main__donation_content{
+			margin-left: 25px;
+			h1{
+				margin-bottom: 10px;
+			}
+			.btn-donation{
+				margin-bottom: 20px;
+				img{
+					margin-right: 15px;
+				}
+			}
+			.donation{
+				font-size: 12px;
+				font-family: $FontsArial;
+				color: rgb(178, 178, 178);
+				font-style: italic;
+				line-height: 1.5;
+			}
+		}
+	}
 }

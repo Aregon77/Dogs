@@ -39,8 +39,6 @@ Btn
 .btn-gold {
   font-size: 1.1em;
   background-color: #f1cdb3;
-  width: 205px;
-  padding: 12px 0;
 }
 
 .btn-gold:hover {
@@ -57,6 +55,11 @@ Btn
   background: #f1cdb3;
 }
 
+.btn-header {
+  width: 205px;
+  padding: 12px 0;
+}
+
 .btn-slider {
   width: 185px;
   padding: 11px 0;
@@ -65,6 +68,14 @@ Btn
 
 .btn-gold-wwide {
   width: 260px;
+  padding: 9px 0;
+}
+
+.btn-donation {
+  width: 320px;
+  height: 50px;
+  border-radius: 9px;
+  padding: 10px;
 }
 
 /***************
@@ -197,17 +208,11 @@ header .header__main p {
   padding-bottom: 160px;
 }
 
-.main .main__about .main__about_content {
-  margin-left: 80px;
-  width: 425px;
-}
-
 .main .main__about h1 {
   font-size: 35px;
   font-family: "Georgia";
   color: #545454;
   line-height: 1.286;
-  width: 315px;
 }
 
 .main .main__about p {
@@ -292,5 +297,33 @@ header .header__main p {
   font-family: "Georgia";
   color: #545454;
   line-height: 2.25;
+}
+
+.main .main__donation {
+  background-color: #f6f6f6;
+}
+
+.main .main__donation .main__donation_content {
+  margin-left: 25px;
+}
+
+.main .main__donation .main__donation_content h1 {
+  margin-bottom: 10px;
+}
+
+.main .main__donation .main__donation_content .btn-donation {
+  margin-bottom: 20px;
+}
+
+.main .main__donation .main__donation_content .btn-donation img {
+  margin-right: 15px;
+}
+
+.main .main__donation .main__donation_content .donation {
+  font-size: 12px;
+  font-family: "Arial";
+  color: #b2b2b2;
+  font-style: italic;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */
