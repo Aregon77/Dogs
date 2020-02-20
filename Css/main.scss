@@ -75,7 +75,7 @@ Btn
 .btn-slider{
 	width: 185px;
 	padding:1.1rem 0 ;
-	font-size: 17px; 
+	font-size: 1.1em; 
 }
 
 .btn-gold-wwide{
@@ -143,7 +143,7 @@ header {
 		.nav-item {
 			.nav-link {
 				margin-right: 3.5rem;
-				font-size: 15px;
+				font-size: 0.9em;
 				font-family: $FontsArial;
 
 				color: rgba(205, 205, 205, .8);
@@ -179,13 +179,13 @@ header {
 		padding-top: 22rem;
 		h1{
 			font-family: $FontsGeo;
-			font-size: 44px;
+			font-size: 2.8em;
 			color: rgb(255, 255, 255); 
 			max-width: 350px;
 			padding-bottom: 3rem;
 		}
 		p{	
-			font-size: 15px;
+			font-size: 0.9em;
 			font-family: $FontsArial;
 			color: rgb(205, 205, 205);
 			line-height: 1.6;
@@ -199,7 +199,7 @@ header {
 		padding-top: 6.5rem;
 		padding-bottom:6rem;
 		.title__h1{
-			font-size: 35px;
+			font-size: 2.2em;
 			font-family: $FontsGeo;
 			color: rgb(84, 84, 84);
 			line-height: 1.286;
@@ -209,13 +209,13 @@ header {
 		padding-top: 8rem;
 		padding-bottom: 16rem;
 		h1{
-			font-size: 35px;
+			font-size: 2.2em;
 			font-family: $FontsGeo;
 			color: rgb(84, 84, 84);
 			line-height: 1.286;
 		}
 		p{
-			font-size: 15px;
+			font-size: 0.9em;
 			font-family: $FontsArial;
 			color: rgb(76, 76, 76);
 			line-height: 1.6;
@@ -248,7 +248,7 @@ header {
 				h4{
 					margin-bottom: 2.4rem;
 					
-					font-size: 20px;
+					font-size: 1.3em;
 					font-family: $FontsGeo;
 					color: rgb(84, 84, 84);
 					line-height: 2.25;
@@ -299,7 +299,7 @@ header {
 				height: 58px;
 			}
 			p{
-				font-size: 20px;
+				font-size: 1.3em;
 				font-family: $FontsGeo;
 				color: rgb(84, 84, 84);
 			}
@@ -322,7 +322,7 @@ header {
 				}
 			}
 			.donation{
-				font-size: 12px;
+				font-size: 0.8em;
 				font-family: $FontsArial;
 				color: rgb(178, 178, 178);
 				font-style: italic;
@@ -336,7 +336,7 @@ header {
 	@include back-img ("../img/Footer__icon/Footer-Back.jpg");
 	padding-top: 8rem;
 	h1{
-		font-size: 35px;
+		font-size: 2.2em;
 		font-family: $FontsGeo;
 		color: rgb(255, 255, 255);
 		line-height: 1.286;
@@ -347,7 +347,7 @@ header {
 	.footer__item{
 		margin-bottom: 3.5rem;
 		a{
-			font-size: 20px;
+			font-size: 1.3em;
 			font-family: $FontsTimes;
 			color: $btn-back-color;
 			text-align: right;
@@ -430,4 +430,13 @@ Media
 		 }
 	}
 	
+}
+
+@media screen and (max-width:325px){
+	.main .main__donation .main__donation_content .btn-donation{
+		width: 290px;
+		img{
+			margin-left: 0.8rem;
+		}
+	}
 }
