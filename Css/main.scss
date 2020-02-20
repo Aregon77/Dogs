@@ -117,6 +117,7 @@ HEDER
 header {
 	@include back-img ("../img/header/Header-Back.jpg");
 	height: 100vh;
+	overflow: hidden;
 	.navbar {
 		padding-top: 60px;
 		.navbar-brand {
