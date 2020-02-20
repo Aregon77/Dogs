@@ -42,11 +42,11 @@ Btn
 }
 
 .btn-gold:hover {
-  background-color: #fff;
+  background-color: white;
 }
 
 .btn-white {
-  background: #fff;
+  background: white;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
@@ -57,25 +57,25 @@ Btn
 
 .btn-header {
   width: 205px;
-  padding: 12px 0;
+  padding: 1.2rem 0;
 }
 
 .btn-slider {
   width: 185px;
-  padding: 11px 0;
+  padding: 1.1rem 0;
   font-size: 17px;
 }
 
 .btn-gold-wwide {
   width: 260px;
-  padding: 9px 0;
+  padding: 0.9rem 0;
 }
 
 .btn-donation {
   width: 320px;
   height: 50px;
   border-radius: 9px;
-  padding: 10px;
+  padding: 1rem;
 }
 
 /***************
@@ -117,7 +117,7 @@ header {
 }
 
 header .navbar {
-  padding-top: 60px;
+  padding-top: 6rem;
 }
 
 header .navbar .navbar-brand .navbar__logo-title {
@@ -134,17 +134,17 @@ header .navbar .navbar-brand .navbar__logo-subtitle {
   font-size: .9em;
   word-spacing: 1px;
   font-family: "Arial";
-  color: #fff;
+  color: white;
   line-height: 1.8;
 }
 
 header .navbar .nav-item .nav-link {
-  margin-right: 35px;
+  margin-right: 3.5rem;
   font-size: 15px;
   font-family: "Arial";
   color: rgba(205, 205, 205, 0.8);
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
   position: relative;
 }
 
@@ -171,7 +171,7 @@ header .navbar .nav-item .nav-link:hover:before, header .navbar .nav-item .nav-l
 }
 
 header .header__main {
-  padding-top: 220px;
+  padding-top: 22rem;
 }
 
 header .header__main h1 {
@@ -179,7 +179,7 @@ header .header__main h1 {
   font-size: 44px;
   color: white;
   max-width: 350px;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
 header .header__main p {
@@ -187,12 +187,12 @@ header .header__main p {
   font-family: "Arial";
   color: #cdcdcd;
   line-height: 1.6;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
 .main .title {
-  padding-top: 65px;
-  padding-bottom: 60px;
+  padding-top: 6.5rem;
+  padding-bottom: 6rem;
 }
 
 .main .title .title__h1 {
@@ -203,8 +203,8 @@ header .header__main p {
 }
 
 .main .main__about {
-  padding-top: 80px;
-  padding-bottom: 160px;
+  padding-top: 8rem;
+  padding-bottom: 16rem;
 }
 
 .main .main__about h1 {
@@ -223,15 +223,15 @@ header .header__main p {
 
 .main .main__section {
   background-color: #f6f6f6;
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 
 .main .main__section .animals__card {
   border-radius: 9px;
   background-color: #fafafa;
   text-align: center;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
@@ -250,11 +250,11 @@ header .header__main p {
 .main .main__section .animals__card img {
   max-height: 207px;
   height: 100%;
-  margin: 35px auto 40px;
+  margin: 3.5rem auto 4rem;
 }
 
 .main .main__section .animals__card h4 {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   font-size: 20px;
   font-family: "Georgia";
   color: #545454;
@@ -262,13 +262,13 @@ header .header__main p {
 }
 
 .main .main__section .animals__card .btn {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .main .main__section .slick-list {
   height: 500px;
-  padding-top: 25px;
-  margin-bottom: 40px;
+  padding-top: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .main .main__section .slick-prev {
@@ -304,13 +304,13 @@ header .header__main p {
 }
 
 .main .main__help .main__help-items {
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 75px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 7.5rem;
 }
 
 .main .main__help .main__help-items img {
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
   height: 58px;
 }
 
@@ -325,23 +325,23 @@ header .header__main p {
 }
 
 .main .main__donation .main__donation_content {
-  margin-left: 25px;
+  margin-left: 2.5rem;
 }
 
 .main .main__donation .main__donation_content h1 {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .main .main__donation .main__donation_content .btn-donation {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .main .main__donation .main__donation_content .btn-donation img {
-  margin-right: 15px;
-  margin-left: 23px;
+  margin-right: 1.5rem;
+  margin-left: 2.3rem;
 }
 
 .main .main__donation .main__donation_content .donation {
@@ -357,7 +357,7 @@ header .header__main p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 80px;
+  padding-top: 8rem;
 }
 
 .footer h1 {
@@ -365,13 +365,13 @@ header .header__main p {
   font-family: "Georgia";
   color: white;
   line-height: 1.286;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   text-align: left;
   word-spacing: 5px;
 }
 
 .footer .footer__item {
-  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
 }
 
 .footer .footer__item a {
@@ -382,7 +382,7 @@ header .header__main p {
 }
 
 .footer .footer__item a img {
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 
 /***************
@@ -413,15 +413,14 @@ Media
     background-position: center left 66%;
   }
   header .header__main {
-    padding-top: 260px;
-    padding-bottom: 160px;
+    padding-top: 26rem;
   }
   header .header__main h1 {
     margin: auto;
   }
   header .navbar .nav-item .nav-link {
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-right: 2rem;
+    margin-top: 1rem;
   }
   .footer {
     background-position: center left 0;
@@ -435,16 +434,16 @@ Media
 
 @media screen and (max-width: 500px) {
   header .navbar {
-    padding-top: 25px;
+    padding-top: 2.5rem;
   }
   header .header__main {
-    padding-top: 210px;
+    padding-top: 21rem;
   }
   .main .main__about {
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
   }
   .main .main__help .main__help-items {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   .main .main__donation .main__donation_content {
     margin-left: 0;

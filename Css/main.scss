@@ -22,6 +22,8 @@ $FontsArial:'Arial';
 $FontsTimes:"Times New Roman";
 $btn-back-color:rgb(241, 205, 179);
 $btn-text-color:rgb(41, 41, 41);
+$white-color: rgb(255,255,255);
+$btn-back-white:rgb(255,255,255);
 
 /***************
 ****************
@@ -53,12 +55,12 @@ Btn
 	font-size: 1.1em;
 	background-color: $btn-back-color;
 	&:hover{
-		background-color: #fff;
+		background-color: $btn-back-white;
 	}
 }
 
 .btn-white{
-	background:#fff;
+	background:$white-color;
 	transition: all .5s linear;
 	&:hover{
 		background:$btn-back-color;
@@ -67,24 +69,24 @@ Btn
 
 .btn-header{
 	width: 205px;
-	padding:12px 0 ;
+	padding:1.2rem 0 ;
 }
 
 .btn-slider{
 	width: 185px;
-	padding:11px 0 ;
+	padding:1.1rem 0 ;
 	font-size: 17px; 
 }
 
 .btn-gold-wwide{
 	width: 260px;
-	padding: 9px 0 ;
+	padding: 0.9rem 0 ;
 }
 .btn-donation{
 		width: 320px;
 		height: 50px;
 		border-radius:9px;
-		padding: 10px;
+		padding: 1rem;
 }
 /***************
 ****************
@@ -119,7 +121,7 @@ header {
 	height: 100vh;
 	overflow: hidden;
 	.navbar {
-		padding-top: 60px;
+		padding-top:6rem;
 		.navbar-brand {
 			.navbar__logo-title {
 				display: inline-block;
@@ -133,20 +135,20 @@ header {
 				display: inline-block;
 				font-size: .9em;
 				word-spacing: 1px;
-				font-family: "Arial";
-				color: #fff;
+				font-family: $FontsArial;
+				color: $white-color;
 				line-height: 1.8;
 			}
 		}
 		.nav-item {
 			.nav-link {
-				margin-right: 35px;
+				margin-right: 3.5rem;
 				font-size: 15px;
-				font-family: "Arial";
+				font-family: $FontsArial;
 
 				color: rgba(205, 205, 205, .8);
 				padding: 0;
-				padding-bottom: 5px;
+				padding-bottom: 0.5rem;
 
 				position: relative;
 
@@ -174,28 +176,28 @@ header {
 		}
 	}
 	.header__main{
-		padding-top: 220px;
+		padding-top: 22rem;
 		h1{
 			font-family: $FontsGeo;
 			font-size: 44px;
 			color: rgb(255, 255, 255); 
 			max-width: 350px;
-			padding-bottom: 30px;
+			padding-bottom: 3rem;
 		}
 		p{	
 			font-size: 15px;
-			font-family: "Arial";
+			font-family: $FontsArial;
 			color: rgb(205, 205, 205);
 			line-height: 1.6;
-			padding-bottom: 30px;
+			padding-bottom: 3rem;
 		}
 	}
 }
 
 .main{
 	.title{
-		padding-top: 65px;
-		padding-bottom:60px;
+		padding-top: 6.5rem;
+		padding-bottom:6rem;
 		.title__h1{
 			font-size: 35px;
 			font-family: $FontsGeo;
@@ -204,8 +206,8 @@ header {
 		}
 	}
 	.main__about {
-		padding-top: 80px;
-		padding-bottom: 160px;
+		padding-top: 8rem;
+		padding-bottom: 16rem;
 		h1{
 			font-size: 35px;
 			font-family: $FontsGeo;
@@ -214,22 +216,22 @@ header {
 		}
 		p{
 			font-size: 15px;
-			font-family: "Arial";
+			font-family: $FontsArial;
 			color: rgb(76, 76, 76);
 			line-height: 1.6;
 		}
 	}
 	.main__section{
 		background-color:#f6f6f6;
-		padding-bottom: 40px;
+		padding-bottom: 4rem;
 		
 		.animals__card{
 			border-radius: 9px;
 			background-color: rgb(250, 250, 250);
 			text-align: center;
 			
-			margin-left: 25px;
-			margin-right: 25px;
+			margin-left: 2.5rem;
+			margin-right: 2.5rem;
 			transition: all .5s linear;
 			&:hover{
 				transform: scale(1.1);
@@ -241,10 +243,10 @@ header {
 				img{
 					max-height: 207px;
 					height: 100%;
-					margin:35px auto 40px;
+					margin:3.5rem auto 4rem;
 				}
 				h4{
-					margin-bottom: 24px;
+					margin-bottom: 2.4rem;
 					
 					font-size: 20px;
 					font-family: $FontsGeo;
@@ -252,13 +254,13 @@ header {
 					line-height: 2.25;
 				}
 			.btn{
-				margin-bottom: 30px;
+				margin-bottom: 3rem;
 				}
 		}
 		.slick-list{
 			height: 500px;
-			padding-top: 25px;
-			margin-bottom: 40px;
+			padding-top: 2.5rem;
+			margin-bottom: 4rem;
 		}
 		.slick-prev{
 			background:url(../img/Main_slider/Arrow/long-left-arrow.png);
@@ -289,11 +291,11 @@ header {
 	}
 	.main__help{
 		.main__help-items{
-			margin-right: 10px;
-			margin-left: 10px;
-			margin-bottom: 75px;
+			margin-right: 1rem;
+			margin-left: 1rem;
+			margin-bottom: 7.5rem;
 			img{
-				margin-bottom: 25px;
+				margin-bottom: 2.5rem;
 				height: 58px;
 			}
 			p{
@@ -307,16 +309,16 @@ header {
 	.main__donation{
 		background-color:#f6f6f6;
 		.main__donation_content{
-			margin-left: 25px;
+			margin-left: 2.5rem;
 			h1{
-				margin-bottom: 10px;
+				margin-bottom: 1rem;
 			}
 			.btn-donation{
-				margin-bottom: 20px;
+				margin-bottom: 2rem;
 				display: flex;
 				img{
-					margin-right: 15px;
-					margin-left: 23px;
+					margin-right: 1.5rem;
+					margin-left: 2.3rem;
 				}
 			}
 			.donation{
@@ -332,18 +334,18 @@ header {
 
 .footer{
 	@include back-img ("../img/Footer__icon/Footer-Back.jpg");
-	padding-top: 80px;
+	padding-top: 8rem;
 	h1{
 		font-size: 35px;
 		font-family: $FontsGeo;
 		color: rgb(255, 255, 255);
 		line-height: 1.286;
-		margin-bottom: 20px;
+		margin-bottom: 2rem;
 		text-align: left;
 		word-spacing: 5px;
 	}
 	.footer__item{
-		margin-bottom: 35px;
+		margin-bottom: 3.5rem;
 		a{
 			font-size: 20px;
 			font-family: $FontsTimes;
@@ -351,7 +353,7 @@ header {
 			text-align: right;
 			
 			img{
-				margin-right: 15px;
+				margin-right: 1.5rem;
 			}
 		}
 	}
@@ -386,16 +388,15 @@ Media
 		height: 100vh;
 		background-position: center left 66%;
 		.header__main {
-			padding-top: 260px;
-   	 		padding-bottom: 160px;
+			padding-top: 26rem;
 			h1{
 				margin: auto;
 			}	
 		}
 		
 		.navbar .nav-item .nav-link{
-			margin-right: 20px;
-			margin-top: 10px;
+			margin-right: 2rem;
+			margin-top: 1rem;
 		}
 	}
 	.footer{
@@ -409,20 +410,20 @@ Media
 @media screen and (max-width:500px){
 	header {
 		.navbar{
-			padding-top: 25px;
+			padding-top: 2.5rem;
 		}
 		.header__main {
-			padding-top: 210px;
+			padding-top: 21rem;
 		}
 	}
 
 	.main{
 		.main__about{
-			padding-bottom: 80px;
+			padding-bottom: 8rem;
 		}
 		
 		.main__help .main__help-items{
-			margin-bottom: 20px;
+			margin-bottom: 2rem;
 		}
 		 .main__donation .main__donation_content{
 			 margin-left: 0;
