@@ -114,10 +114,13 @@ header {
   background-position: center;
   height: 100vh;
   overflow: hidden;
+  /*navbar*/
+  /*Header__main*/
 }
 
 header .navbar {
   padding-top: 6rem;
+  /*nav-item*/
 }
 
 header .navbar .navbar-brand .navbar__logo-title {
@@ -188,6 +191,19 @@ header .header__main p {
   color: #cdcdcd;
   line-height: 1.6;
   padding-bottom: 3rem;
+}
+
+/***************
+****************
+HEDER
+****************
+****************/
+.main {
+  /*title*/
+  /*main__about*/
+  /*main__section*/
+  /*main__help*/
+  /*.main__donation*/
 }
 
 .main .title {
@@ -352,12 +368,18 @@ header .header__main p {
   line-height: 1.5;
 }
 
+/***************
+****************
+FOOTER
+****************
+****************/
 .footer {
   background-image: url("../img/Footer__icon/Footer-Back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 8rem;
+  /*.footer__item*/
 }
 
 .footer h1 {

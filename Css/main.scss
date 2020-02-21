@@ -120,6 +120,7 @@ header {
 	@include back-img ("../img/header/Header-Back.jpg");
 	height: 100vh;
 	overflow: hidden;
+	/*navbar*/ 
 	.navbar {
 		padding-top:6rem;
 		.navbar-brand {
@@ -140,6 +141,7 @@ header {
 				line-height: 1.8;
 			}
 		}
+		/*nav-item*/ 
 		.nav-item {
 			.nav-link {
 				margin-right: 3.5rem;
@@ -175,6 +177,7 @@ header {
 			}
 		}
 	}
+	/*Header__main*/ 
 	.header__main{
 		padding-top: 22rem;
 		h1{
@@ -193,8 +196,13 @@ header {
 		}
 	}
 }
-
+/***************
+****************
+HEDER
+****************
+****************/
 .main{
+	/*title*/ 
 	.title{
 		padding-top: 6.5rem;
 		padding-bottom:6rem;
@@ -205,6 +213,7 @@ header {
 			line-height: 1.286;
 		}
 	}
+	/*main__about*/ 
 	.main__about {
 		padding-top: 8rem;
 		padding-bottom: 16rem;
@@ -221,6 +230,7 @@ header {
 			line-height: 1.6;
 		}
 	}
+	/*main__section*/ 
 	.main__section{
 		background-color:#f6f6f6;
 		padding-bottom: 4rem;
@@ -289,6 +299,7 @@ header {
 			}
 		}
 	}
+	/*main__help*/ 
 	.main__help{
 		.main__help-items{
 			margin-right: 1rem;
@@ -305,7 +316,7 @@ header {
 			}
 		}
 	}	
-
+	/*.main__donation*/ 
 	.main__donation{
 		background-color:#f6f6f6;
 		.main__donation_content{
@@ -331,6 +342,11 @@ header {
 		}
 	}
 }
+/***************
+****************
+FOOTER
+****************
+****************/
 
 .footer{
 	@include back-img ("../img/Footer__icon/Footer-Back.jpg");
@@ -344,6 +360,7 @@ header {
 		text-align: left;
 		word-spacing: 5px;
 	}
+	/*.footer__item*/ 
 	.footer__item{
 		margin-bottom: 3.5rem;
 		a{
