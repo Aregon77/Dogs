@@ -410,13 +410,13 @@ Media
 @media screen and (max-width: 769px) {
   header {
     height: 100vh;
-    background-position: center left 66%;
+    background-position: center left 32%;
   }
   header .header__main {
     padding-top: 26rem;
   }
-  header .header__main h1 {
-    margin: auto;
+  header .header__main p {
+    width: 89%;
   }
   header .navbar .nav-item .nav-link {
     margin-right: 2rem;
@@ -456,6 +456,94 @@ Media
   }
   .main .main__donation .main__donation_content .btn-donation img {
     margin-left: 0.8rem;
+  }
+}
+
+@media screen and (max-height: 769px) {
+  header .header__main {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  header {
+    height: 100vh;
+  }
+  header .navbar {
+    padding-top: 2rem;
+  }
+  header .header__main {
+    padding-top: 2rem;
+  }
+  header .header__main h1 {
+    margin: 0;
+  }
+  header .header__main p {
+    width: 55%;
+    padding-bottom: 2.5rem;
+  }
+  .main .main__about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .main .main__section .animals__card {
+    width: 208px;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+  }
+  .main .btn-slider {
+    width: 175px;
+  }
+  .main .donation {
+    width: 50%;
+  }
+}
+
+@media screen and (max-height: 376px) {
+  html {
+    font-size: 6px;
+  }
+  body {
+    font-size: 12px;
+  }
+  header {
+    height: 100vh;
+  }
+  header .header__main {
+    padding-top: 5rem;
+  }
+  header .btn-header {
+    width: 180px;
+  }
+  .main .main__section .slick-list {
+    height: 400px;
+  }
+  .btn-donation {
+    width: 240px;
+  }
+}
+
+@media screen and (max-height: 321px) {
+  header .header__main h1 {
+    width: 45%;
+  }
+  header .header__main p {
+    width: 45%;
+  }
+  header .header__main .btn-header {
+    width: 150px;
+  }
+  .main .main__about .main__about_picture, .main .main__about .main__about_content {
+    width: 45%;
+  }
+  .main .main__help .main__help-items {
+    width: 25%;
+  }
+  .footer .footer__card div {
+    width: 50%;
+  }
+  .footer .footer__card .footer__item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
