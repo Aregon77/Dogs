@@ -22,8 +22,8 @@ $FontsArial:'Arial';
 $FontsTimes:"Times New Roman";
 $btn-back-color:rgb(241, 205, 179);
 $btn-text-color:rgb(41, 41, 41);
-$white-color: rgb(255,255,255);
-$btn-back-white:rgb(255,255,255);
+$white-color: rgb(255, 255, 255);
+$btn-back-white:rgb(255, 255, 255);
 
 /***************
 ****************
@@ -43,51 +43,57 @@ Btn
 ****************
 ****************/
 
-.btn{
+.btn {
 	font-family: $FontsGeo;
 	color: $btn-text-color;
-	border-radius:30px;
-	border: 3px solid $btn-back-color ;
+	border-radius: 30px;
+	border: 3px solid $btn-back-color;
+	-webkit-transition: all .5s linear;
 	transition: all .5s linear;
 }
 
-.btn-gold{
+.btn-gold {
 	font-size: 1.1em;
 	background-color: $btn-back-color;
-	&:hover{
+
+	&:hover {
 		background-color: $btn-back-white;
 	}
 }
 
-.btn-white{
-	background:$white-color;
+.btn-white {
+	background: $white-color;
+	-webkit-transition: all .5s linear;
 	transition: all .5s linear;
-	&:hover{
-		background:$btn-back-color;
+
+	&:hover {
+		background: $btn-back-color;
 	}
 }
 
-.btn-header{
+.btn-header {
 	width: 205px;
-	padding:1.2rem 0 ;
+	padding: 1.2rem 0;
 }
 
-.btn-slider{
+.btn-slider {
 	width: 185px;
-	padding:1.1rem 0 ;
-	font-size: 1.1em; 
+	padding: 1.1rem 0;
+	font-size: 1.1em;
 }
 
-.btn-gold-wwide{
+.btn-gold-wwide {
 	width: 260px;
-	padding: 0.9rem 0 ;
+	padding: 0.9rem 0;
 }
-.btn-donation{
-		width: 320px;
-		height: 50px;
-		border-radius:9px;
-		padding: 1rem;
+
+.btn-donation {
+	width: 320px;
+	height: 50px;
+	border-radius: 9px;
+	padding: 1rem;
 }
+
 /***************
 ****************
 Html
@@ -106,11 +112,13 @@ body {
 	width: 100%;
 	max-width: 1170px;
 }
-a{
-	&:hover{
+
+a {
+	&:hover {
 		text-decoration: none;
 	}
 }
+
 /***************
 ****************
 HEDER
@@ -120,9 +128,11 @@ header {
 	@include back-img ("../img/header/Header-Back.jpg");
 	height: 100vh;
 	overflow: hidden;
-	/*navbar*/ 
+
+	/*navbar*/
 	.navbar {
-		padding-top:6rem;
+		padding-top: 6rem;
+
 		.navbar-brand {
 			.navbar__logo-title {
 				display: inline-block;
@@ -132,6 +142,7 @@ header {
 				width: 100%;
 				line-height: 1;
 			}
+
 			.navbar__logo-subtitle {
 				display: inline-block;
 				font-size: .9em;
@@ -141,7 +152,8 @@ header {
 				line-height: 1.8;
 			}
 		}
-		/*nav-item*/ 
+
+		/*nav-item*/
 		.nav-item {
 			.nav-link {
 				margin-right: 3.5rem;
@@ -164,30 +176,37 @@ header {
 					position: absolute;
 					top: 25px;
 					left: 0;
-					
+
+					-webkit-transition: all 0.5s ease-in-out;
+
 					transition: all 0.5s ease-in-out;
 				}
+
 				&:hover {
 					opacity: 1;
 				}
-				&:hover:before, 
+
+				&:hover:before,
 				&:focus:before {
 					width: 100%;
 				}
 			}
 		}
 	}
-	/*Header__main*/ 
-	.header__main{
+
+	/*Header__main*/
+	.header__main {
 		padding-top: 22rem;
-		h1{
+
+		h1 {
 			font-family: $FontsGeo;
 			font-size: 2.8em;
-			color: rgb(255, 255, 255); 
+			color: rgb(255, 255, 255);
 			max-width: 350px;
 			padding-bottom: 3rem;
 		}
-		p{	
+
+		p {
 			font-size: 0.9em;
 			font-family: $FontsArial;
 			color: rgb(205, 205, 205);
@@ -196,143 +215,174 @@ header {
 		}
 	}
 }
+
 /***************
 ****************
 HEDER
 ****************
 ****************/
-.main{
-	/*title*/ 
-	.title{
+.main {
+
+	/*title*/
+	.title {
 		padding-top: 6.5rem;
-		padding-bottom:6rem;
-		.title__h1{
+		padding-bottom: 6rem;
+
+		.title__h1 {
 			font-size: 2.2em;
 			font-family: $FontsGeo;
 			color: rgb(84, 84, 84);
 			line-height: 1.286;
 		}
 	}
-	/*main__about*/ 
+
+	/*main__about*/
 	.main__about {
 		padding-top: 8rem;
 		padding-bottom: 16rem;
-		h1{
+
+		h1 {
 			font-size: 2.2em;
 			font-family: $FontsGeo;
 			color: rgb(84, 84, 84);
 			line-height: 1.286;
 		}
-		p{
+
+		p {
 			font-size: 0.9em;
 			font-family: $FontsArial;
 			color: rgb(76, 76, 76);
 			line-height: 1.6;
 		}
 	}
-	/*main__section*/ 
-	.main__section{
-		background-color:#f6f6f6;
+
+	/*main__section*/
+	.main__section {
+		background-color: #f6f6f6;
 		padding-bottom: 4rem;
-		
-		.animals__card{
+
+		.animals__card {
 			border-radius: 9px;
 			background-color: rgb(250, 250, 250);
 			text-align: center;
-			
+
 			margin-left: 2.5rem;
 			margin-right: 2.5rem;
+			-webkit-transition: all .5s linear;
 			transition: all .5s linear;
-			&:hover{
+
+			&:hover {
+				-webkit-transform: scale(1.1);
 				transform: scale(1.1);
-				box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);				
+				box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
 			}
-			&:focus{
+
+			&:focus {
 				outline: none;
 			}
-				img{
-					max-height: 207px;
-					height: 100%;
-					margin:3.5rem auto 4rem;
-				}
-				h4{
-					margin-bottom: 2.4rem;
-					
-					font-size: 1.3em;
-					font-family: $FontsGeo;
-					color: rgb(84, 84, 84);
-					line-height: 2.25;
-				}
-			.btn{
+
+			img {
+				max-height: 207px;
+				height: 100%;
+				margin: 3.5rem auto 4rem;
+			}
+
+			h4 {
+				margin-bottom: 2.4rem;
+
+				font-size: 1.3em;
+				font-family: $FontsGeo;
+				color: rgb(84, 84, 84);
+				line-height: 2.25;
+			}
+
+			.btn {
 				margin-bottom: 3rem;
-				}
+			}
 		}
-		.slick-list{
+
+		.slick-list {
 			height: 500px;
 			padding-top: 2.5rem;
 			margin-bottom: 4rem;
 		}
-		.slick-prev{
-			background:url(../img/Main_slider/Arrow/long-left-arrow.png);
+
+		.slick-prev {
+			background: url(../img/Main_slider/Arrow/long-left-arrow.png);
 			left: -55px;
 			width: 50px;
 			height: 50px;
-			&::before{
-				content:"";
+
+			&::before {
+				content: "";
 			}
-			&:hover{
-				border-radius:50%;
-				background-color:$btn-back-color;
+
+			&:hover {
+				border-radius: 50%;
+				background-color: $btn-back-color;
 			}
 		}
-		.slick-next{
-			background:url(../img/Main_slider/Arrow/long-right-arrow.png);
+
+		.slick-next {
+			background: url(../img/Main_slider/Arrow/long-right-arrow.png);
 			right: -55px;
 			width: 50px;
 			height: 50px;
-			&::before{
-				content:"";
+
+			&::before {
+				content: "";
 			}
-			&:hover{
-				border-radius:50%;
-				background-color:$btn-back-color;
+
+			&:hover {
+				border-radius: 50%;
+				background-color: $btn-back-color;
 			}
 		}
 	}
-	/*main__help*/ 
-	.main__help{
-		.main__help-items{
+
+	/*main__help*/
+	.main__help {
+		.main__help-items {
 			margin-right: 1rem;
 			margin-left: 1rem;
 			margin-bottom: 7.5rem;
-			img{
+
+			img {
 				margin-bottom: 2.5rem;
 				height: 58px;
 			}
-			p{
+
+			p {
 				font-size: 1.3em;
 				font-family: $FontsGeo;
 				color: rgb(84, 84, 84);
 			}
 		}
-	}	
-	/*.main__donation*/ 
-	.main__donation{
-		background-color:#f6f6f6;
-		.main__donation_content{
+	}
+
+	/*.main__donation*/
+	.main__donation {
+		background-color: #f6f6f6;
+
+		.main__donation_content {
 			margin-left: 2.5rem;
-			h1{
+
+			h1 {
 				margin-bottom: 1rem;
 			}
-			.btn-donation{
+
+			.btn-donation {
 				margin-bottom: 2rem;
+				display: -webkit-box;
 				display: flex;
-				img{
+
+				img {
 					margin-right: 1.5rem;
 					margin-left: 2.3rem;
 				}
 			}
-			.donation{
+
+			.donation {
 				font-size: 0.8em;
 				font-family: $FontsArial;
 				color: rgb(178, 178, 178);
@@ -342,16 +392,18 @@ HEDER
 		}
 	}
 }
+
 /***************
 ****************
 FOOTER
 ****************
 ****************/
 
-.footer{
+.footer {
 	@include back-img ("../img/Footer__icon/Footer-Back.jpg");
 	padding-top: 8rem;
-	h1{
+
+	h1 {
 		font-size: 2.2em;
 		font-family: $FontsGeo;
 		color: rgb(255, 255, 255);
@@ -360,21 +412,23 @@ FOOTER
 		text-align: left;
 		word-spacing: 5px;
 	}
-	/*.footer__item*/ 
-	.footer__item{
+
+	/*.footer__item*/
+	.footer__item {
 		margin-bottom: 3.5rem;
-		a{
+
+		a {
 			font-size: 1.3em;
 			font-family: $FontsTimes;
 			color: $btn-back-color;
 			text-align: right;
-			
-			img{
+
+			img {
 				margin-right: 1.5rem;
 			}
 		}
 	}
-	
+
 }
 
 /***************
@@ -382,210 +436,255 @@ FOOTER
 Media
 ****************
 ****************/
-@media screen and (max-width:1025px){
-	body{
+@media screen and (max-width:1025px) {
+	body {
 		font-size: 20px;
 	}
-	header{
+
+	header {
 		height: 100vh;
 		background-position: center left 57%;
-		.navbar .nav-item .nav-link{
-			&:before{
-				content:none;
+
+		.navbar .nav-item .nav-link {
+			&:before {
+				content: none;
 			}
 		}
 	}
-	.footer{
+
+	.footer {
 		background-position: center left 55%;
 	}
-	.slick-next ,
-	.slick-arrow{
-		display: none!important;
+
+	.slick-next,
+	.slick-arrow {
+		display: none !important;
 	}
 }
-@media screen and (max-width:769px){
-	body{
+
+@media screen and (max-width:769px) {
+	body {
 		font-size: 16px;
 	}
-	header{
+
+	header {
 		height: 100vh;
 		background-position: center left 61%;
+
 		.header__main {
 			padding-top: 26rem;
-			p{
+
+			p {
 				width: 89%;
-			}	
+			}
 		}
-		
-		.navbar .nav-item .nav-link{
+
+		.navbar .nav-item .nav-link {
 			margin-right: 2rem;
 			margin-top: 1rem;
 		}
 	}
-	.footer{
+
+	.footer {
 		background-position: center left 0;
-		.footer__card{
+
+		.footer__card {
+			-webkit-box-pack: center;
 			justify-content: center;
 		}
 	}
 }
-@media screen and (max-height: 769px){
-	header .header__main{
+
+@media screen and (max-height: 769px) {
+	header .header__main {
 		padding-top: 3rem;
 	}
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
 	header {
 		background-position: center left 0%;
-		.navbar{
+
+		.navbar {
 			padding-top: 2.5rem;
 		}
+
 		.header__main {
 			padding-top: 15rem;
 		}
 	}
 
-	.main{
-		.main__about{
+	.main {
+		.main__about {
 			padding-bottom: 8rem;
 		}
-		
-		.main__help .main__help-items{
+
+		.main__help .main__help-items {
 			margin-bottom: 2rem;
 		}
-		 .main__donation .main__donation_content{
-			 margin-left: 0;
-		 }
+
+		.main__donation .main__donation_content {
+			margin-left: 0;
+		}
 	}
-	
+
 }
-@media screen and (max-width:500px){
-	header{
+
+@media screen and (max-width:500px) {
+	header {
 		height: 100%;
-		.header__main{
+
+		.header__main {
 			padding-top: 13rem;
 			padding-bottom: 13rem;
 		}
 	}
-	
+
 }
 
-@media screen and (max-width:325px){
-	body{
+@media screen and (max-width:325px) {
+	body {
 		font-size: 14px;
 	}
-	header{
-		.header__main{
+
+	header {
+		.header__main {
 			padding-top: 10rem;
 			padding-bottom: 10rem
 		}
 	}
-	.main .main__donation .main__donation_content .btn-donation{
+
+	.main .main__donation .main__donation_content .btn-donation {
 		width: 290px;
-		img{
+
+		img {
 			margin-left: 0.8rem;
 		}
 	}
 }
 
-@media screen and (max-height: 420px){
-	body{
+@media screen and (max-height: 420px) {
+	body {
 		font-size: 13px;
 	}
+
 	header {
 		height: 100%;
-		.navbar{
+
+		.navbar {
 			padding-top: 2rem;
 		}
-		.header__main{
+
+		.header__main {
 			padding-top: 2rem;
 			padding-bottom: 3rem;
-			h1{
+
+			h1 {
 				margin: 0;
 			}
-			p{
+
+			p {
 				width: 55%;
-				padding-bottom:2.5rem;
+				padding-bottom: 2.5rem;
 			}
 		}
 	}
+
 	.main {
-		.main__about{
+		.main__about {
 			padding-top: 5rem;
 			padding-bottom: 5rem;
 		}
-		.main__section .animals__card{
+
+		.main__section .animals__card {
 			width: 208px;
 			margin-left: 1.9rem;
 			margin-right: 1.9rem;
 		}
-		.btn-slider{
+
+		.btn-slider {
 			width: 175px;
 		}
-		.donation{
+
+		.donation {
 			width: 50%;
 		}
-	} 
+	}
 }
-@media screen and (max-height: 376px){
-	html{
+
+@media screen and (max-height: 376px) {
+	html {
 		font-size: 6px;
 	}
-	body{
+
+	body {
 		font-size: 12px;
 	}
-	header{
+
+	header {
 		height: 100%;
-		.header__main{
+
+		.header__main {
 			padding-top: 10rem;
 			padding-bottom: 10rem;
 		}
-		.btn-header{
+
+		.btn-header {
 			width: 180px;
 		}
 	}
 
-	.main .main__section .slick-list{
-		height:400px;
+	.main .main__section .slick-list {
+		height: 400px;
 	}
-	.btn-donation{
+
+	.btn-donation {
 		width: 240px;
 	}
 }
 
-@media screen and (max-height: 321px){
-	body{
+@media screen and (max-height: 321px) {
+	body {
 		font-size: 10px;
 	}
-	header .header__main{
+
+	header .header__main {
 		padding-top: 7rem;
 		padding-bottom: 8rem;
-		h1{
+
+		h1 {
 			width: 45%;
 		}
-		p{
+
+		p {
 			width: 45%;
 		}
-		.btn-header{
+
+		.btn-header {
 			width: 150px;
 		}
-	} 
+	}
+
 	.main {
-		.main__about{
-			.main__about_picture, .main__about_content{
+		.main__about {
+
+			.main__about_picture,
+			.main__about_content {
 				width: 45%;
 			}
 		}
-		.main__help .main__help-items{
+
+		.main__help .main__help-items {
 			width: 25%;
 		}
 	}
-	.footer .footer__card{
-		div{
+
+	.footer .footer__card {
+		div {
 			width: 50%;
 		}
-		.footer__item{
+
+		.footer__item {
 			width: 100%;
 		}
 	}
