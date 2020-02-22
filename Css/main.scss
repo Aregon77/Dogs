@@ -383,8 +383,11 @@ Media
 ****************
 ****************/
 @media screen and (max-width:1025px){
+	body{
+		font-size: 20px;
+	}
 	header{
-		height: 80vh;
+		height: 100vh;
 		background-position: center left 57%;
 		.navbar .nav-item .nav-link{
 			&:before{
@@ -401,9 +404,12 @@ Media
 	}
 }
 @media screen and (max-width:769px){
+	body{
+		font-size: 16px;
+	}
 	header{
 		height: 100vh;
-		background-position: center left 32%;
+		background-position: center left 61%;
 		.header__main {
 			padding-top: 26rem;
 			p{
@@ -423,14 +429,20 @@ Media
 		}
 	}
 }
+@media screen and (max-height: 769px){
+	header .header__main{
+		padding-top: 3rem;
+	}
+}
 
 @media screen and (max-width:500px){
 	header {
+		background-position: center left 0%;
 		.navbar{
 			padding-top: 2.5rem;
 		}
 		.header__main {
-			padding-top: 21rem;
+			padding-top: 15rem;
 		}
 	}
 
@@ -448,8 +460,27 @@ Media
 	}
 	
 }
+@media screen and (max-width:500px){
+	header{
+		height: 100%;
+		.header__main{
+			padding-top: 13rem;
+			padding-bottom: 13rem;
+		}
+	}
+	
+}
 
 @media screen and (max-width:325px){
+	body{
+		font-size: 14px;
+	}
+	header{
+		.header__main{
+			padding-top: 10rem;
+			padding-bottom: 10rem
+		}
+	}
 	.main .main__donation .main__donation_content .btn-donation{
 		width: 290px;
 		img{
@@ -457,20 +488,19 @@ Media
 		}
 	}
 }
-@media screen and (max-height: 769px){
-	header .header__main{
-		padding-top: 3rem;
-	}
-	
-}
+
 @media screen and (max-height: 420px){
+	body{
+		font-size: 13px;
+	}
 	header {
-		height: 100vh;
+		height: 100%;
 		.navbar{
 			padding-top: 2rem;
 		}
 		.header__main{
 			padding-top: 2rem;
+			padding-bottom: 3rem;
 			h1{
 				margin: 0;
 			}
@@ -506,9 +536,10 @@ Media
 		font-size: 12px;
 	}
 	header{
-		height: 100vh;
+		height: 100%;
 		.header__main{
-			padding-top: 5rem;
+			padding-top: 10rem;
+			padding-bottom: 10rem;
 		}
 		.btn-header{
 			width: 180px;
@@ -524,7 +555,12 @@ Media
 }
 
 @media screen and (max-height: 321px){
+	body{
+		font-size: 10px;
+	}
 	header .header__main{
+		padding-top: 7rem;
+		padding-bottom: 8rem;
 		h1{
 			width: 45%;
 		}
